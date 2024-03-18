@@ -1,0 +1,22 @@
+.carousel-indicators {
+  top: 60vh;
+}
+
+.carousel-inner {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.contentContainer {
+  min-height:385px;
+  padding: 2rem;
+}
+
+@media (max-width: 991px) {
+  .carousel-indicators {
+    display: none;
+  }
+
+  .contentContainer {
+    min-height:385px;
+  }
+}
