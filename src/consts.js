@@ -184,6 +184,223 @@ export const ICONS = [
       tag: 'icon-google-developers'
     }
 ]
+
+export const WEB_EXPERIENCE = [
+  {
+    sec: 'web',
+    title: 'Telus TV catalog for eCommerce page',
+    desc: 'The First 6 months and the last 1 year while I was working for the company. My team was working on a TV catalog for existing customers. I worked on rebranding, new features integration, and optimization of the webpage. The team was a highly collaborative environment with many parties.',
+    tech: [
+      {
+        name: 'ReactJS',
+        tag: 'icon-reactjs'
+      },
+      {
+        name: 'npm',
+        tag: 'icon-npm'
+      },
+      {
+        name:'Responsive Design',
+        tag: 'icon-mobile-device'
+      }
+    ]
+  },
+  {
+    sec: 'web',
+    title: 'Telus Home Security eCommerce page',
+    desc: ' I have worked on home security products for about 6 months while I was in the company. Our team collaborated closely with stakeholders, designers, and the API team to add some new products to the catalog.',
+    tech: [
+      {
+        name: 'ReactJS',
+        tag: 'icon-reactjs'
+      },
+      {
+        name: 'npm',
+        tag: 'icon-npm'
+      },
+      {
+        name:'Responsive Design',
+        tag: 'icon-mobile-device'
+      }
+    ]
+  },
+  {
+    sec: 'web',
+    title: 'Digital Ad for partner store',
+    desc: ' While I was working on GMD, I got involved in the full SDLC of a digital advertisement project. I worked with stakeholders closely to create design poc, working poc and production development. Also, I had a chance to work on DevOps tasks for this project.',
+    tech: [
+      {
+        name: 'ReactJS',
+        tag: 'icon-reactjs'
+      },
+      {
+        name: 'nodejs',
+        tag: 'icon-nodejs'
+      },
+      {
+        name: 'mongoDB',
+        tag: 'icon-mongodb'
+      },
+      {
+        name:'Responsive Design',
+        tag: 'icon-mobile-device'
+      }
+    ]
+  },
+  {
+    sec:'web',
+    title: 'U.S. Bank Homepage',
+    desc: 'My assignment was to translate all of the visual guides into a real webpage. I collaborated closely with the design team, accessibility team, and developer team to rebrand and build the U.S. Bank homepage. I was able to manage the challenges in this project through a solution based work ethic, strong problem-solving skills, and an innovative perspective.',
+    tech:[
+      {
+        name:'AngularJS',
+        tag:'icon-angular-alt'
+      },
+      {
+        name:'Bootstrap',
+        tag:'icon-bootstrap'
+      },
+      {
+        name:'JQuery',
+        tag:'icon-jquery'
+      },
+      {
+        name:'CSS3',
+        tag:'icon-css3'
+      },
+      {
+        name:'HTML5',
+        tag:'icon-html5'
+      },
+      {
+        name:'Responsive Design',
+        tag: 'icon-mobile-device'
+      }		
+    ]
+  },
+  {
+    sec:'web',
+    title: 'Partner company\'s rebranding AEM template mockup',  			
+    desc: 'I was responsible for creating the mockups for each component of the Elavon FIS rebranding page. I closely collaborated with the client, design team, and the AEM developer team. This assignment strengthened my experience in AEM development, usage of Angular JS in AEM components, and best stylesheet practices for AEM components.',
+    tech:[
+      {
+        name:'AngularJS',
+        tag:'icon-angular-alt'
+      },
+      {
+        name:'Bootstrap',
+        tag:'icon-bootstrap'
+      },
+      {
+        name:'CSS3',
+        tag:'icon-css3'
+      },
+      {
+        name:'HTML5',
+        tag:'icon-html5'
+      },
+      {
+        name:'AEM',
+        tag:'icon-shell'
+      },
+      {
+        name:'Responsive Design',
+        tag:'icon-mobile-device'
+      }
+    ]
+  },
+  {
+    sec:'web',
+    title: 'Partner company\'s mobile app',  			
+    desc: 'As the main developer for this project, I developed HTML mock-ups for the AEM page and integrated them into AEM components. This opportunity increased my knowledge of the sling model, OSGI bundle, HTL, and user experience oriented design.',
+    tech:[
+      {
+        name:'AngularJS',
+        tag:'icon-angular-alt'
+      },
+      {
+        name:'Bootstrap',
+        tag:'icon-bootstrap'
+      },
+      {
+        name:'CSS3',
+        tag:'icon-css3'
+      },
+      {
+        name:'HTML5',
+        tag:'icon-html5'
+      },
+      {
+        name:'AEM',
+        tag:'icon-shell'
+      },
+      {
+        name:'Responsive Design',
+        tag:'icon-mobile-device'
+      }
+    ]
+  },
+  {
+    sec:'web',
+    title: 'Internal iPad training App',  			
+    desc: 'I designed and developed U.S. Bank\'s internal website utilizing Angular JS in a short time period. The website included video content; I learned a workaround for streaming via a low bandwidth user.',
+    tech:[
+      {
+        name:'AngularJS',
+        tag:'icon-angular-alt'
+      },
+      {
+        name:'Bootstrap',
+        tag:'icon-bootstrap'
+      },
+      {
+        name:'CSS3',
+        tag:'icon-css3'
+      },
+      {
+        name:'HTML5',
+        tag:'icon-html5'
+      },
+      {
+        name:'Responsive Design',
+        tag:'icon-mobile-device'
+      }
+    ]
+  },
+  {
+    sec:'web',
+    title: 'Wealth Management: Responsive POC',  			
+    desc: 'I developed the design POC for this project in 4 hours. I successfully managed a high-pressure, fast-paced development environment, delivering the page within a very short time frame. Although the project was time sensitive; I was able to utilize bootstrap to deliver a quality product.',
+    tech:[
+      {
+        name:'AngularJS',
+        tag:'icon-angular-alt'
+      },
+      {
+        name:'Bootstrap',
+        tag:'icon-bootstrap'
+      },
+      {
+        name:'CSS3',
+        tag:'icon-css3'
+      },
+      {
+        name:'HTML5',
+        tag:'icon-html5'
+      },
+      {
+        name:'Responsive Design',
+        tag:'icon-mobile-device'
+      }
+    ]
+  }
+]
+
+export const TYPE_OF_CONTENT = {
+  experience: 'experience',
+  bio: 'bio'
+}
+
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/rmatsuda/"
 export const EMAIL = "rmatsuda686ca@gmail.com"
 
@@ -191,5 +408,6 @@ export const FEATURE_FLAGS = {
   enableIntro: true,
   enableBio: true,
   enableTech: true,
-  enableFooter: true 
+  enableFooter: true,
+  enableExperience: true
 }

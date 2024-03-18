@@ -1,6 +1,5 @@
 .Tech {
-  min-height: 100vh;
-  width:100vw
+  min-height: 60vh;
 }
 .Tech i{
 	color:#000;
@@ -8,7 +7,7 @@
 	text-align: center;	
 }
 .Tech .header {
-  font-size:4rem;
+  font-size:2rem;
   text-align: center;
 }
 .Tech .icons {

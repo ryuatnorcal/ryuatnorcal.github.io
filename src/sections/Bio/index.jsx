@@ -19,6 +19,7 @@ const Bio = ({ enable }) => {
           <Col xs="12" lg="6" className="rightPane">
             <Carousel
               carouselData={SET_OF_BIO}
+              type='bio'
             />
           </Col>
         </Row>

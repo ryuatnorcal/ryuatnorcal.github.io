@@ -31,7 +31,10 @@
     "start": "webpack serve --config ./webpack.config.js --mode development",
     "build": "NODE_ENV=production webpack --config ./webpack.config.js",
     "preview": "webpack serve --config ./webpack.config.js --mode production",
-    "test": "vitest"
+    "test": "vitest",
+    "vite:build": "vite build",
+    "vite:preview": "vite preview",
+    "dev": "BROWSER=none WDS_SOCKET_PORT=0 vite --port 3000"
   },
   "eslintConfig": {
     "extends": [
