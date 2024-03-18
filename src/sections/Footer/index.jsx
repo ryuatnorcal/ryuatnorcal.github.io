@@ -15,7 +15,7 @@ const Footer = ({ enable }) => {
       <Container fluid>
         <Row className="justify-content-center">
           <Col xs="auto" lg="4">
-            <a href={EMAIL} ><FontAwesomeIcon icon={faEnvelope } /></a>
+            <a href={`mailto:${EMAIL}`} ><FontAwesomeIcon icon={faEnvelope } /></a>
             <a href={LINKEDIN_LINK} target="_blank"><FontAwesomeIcon icon={ faLinkedinIn } /></a>
           </Col>
           <Col lg="4">
