@@ -16,8 +16,8 @@ export const SET_OF_BIO = [
     sec:'bio',
     category: 'history',
     header: 'Sr Frontend Developer at Telus Digital',
-    location: 'Vancouver BC Canada',
-    year: '2016 - Current',
+    location: 'Vancouver BC / Calgary AB Canada',
+    year: '2021 - 2024',
     role: 'FTE',
     content: 'As a senior front-end developer, I have developed a client-facing eCommerce website for telus.com including OptikTV, internet, and a home security page. We work closely with stakeholders, designers, and API teams to achieve business goals. Also, I onboarded many Jr developers and I was a beloved mentor for next-generation developers.'
   },
