@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import React, {useState} from 'react'
 import {
   Carousel as RBCarousel,
   Container,
@@ -9,16 +9,17 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../libs/font-mfizz-2.4.1/font-mfizz.css'
 import './styles.css'
 import { TYPE_OF_CONTENT } from '../../consts'
+import { CarouselTypes } from './carousel'
 
 
-const Carousel = ({ carouselData, type }) => { 
+const Carousel = ({ carouselData, type }: CarouselTypes) => { 
 
   const [activeIndex, setActiveIndex] = useState(0)
-  const handleSelect = (selectedIndex) => { 
+  const handleSelect = (selectedIndex: number) => { 
     setActiveIndex(selectedIndex)
   }
 
-  const getBioItem = (item, index) => (
+  const getBioItem = (item: object, index: number) => (
       <RBCarousel.Item key={ `item-${index}`} > 
         <Container>
           <Row>
