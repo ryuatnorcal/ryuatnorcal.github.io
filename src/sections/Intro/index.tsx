@@ -1,8 +1,11 @@
 import { Container, Row, Col } from 'react-bootstrap'
 import { LATEST_WORK } from '../../consts'
 import './styles.css'
+interface IntroType {
+  enable: boolean
+}
 
-const Intro = ({ enable }) => { 
+const Intro = ({ enable }: IntroType) => { 
 
   return enable ? (
     <section className='Intro'>

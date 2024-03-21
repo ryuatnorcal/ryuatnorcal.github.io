@@ -6,8 +6,10 @@ import { WEB_EXPERIENCE } from '../../consts'
 import Carousel from '../../components/Carousel'
 import '../../libs/font-mfizz-2.4.1/font-mfizz.css'
 import './styles.css'
-
-const Experience = ({ enable }) => { 
+interface ExperienceType {
+  enable: boolean
+}
+const Experience = ({ enable }: ExperienceType) => { 
 
   return enable ? (
     <section className="Experience">

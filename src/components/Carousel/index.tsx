@@ -1,17 +1,17 @@
-import React, {useState} from 'react'
-import {
-  Carousel as RBCarousel,
-  Container,
-  Row,
-  Col
-} from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import React, { useState } from 'react'
+import RBCarousel from 'react-bootstrap/Carousel'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import "bootstrap/dist/css/bootstrap.min.css";
 import '../../libs/font-mfizz-2.4.1/font-mfizz.css'
 import './styles.css'
 import { TYPE_OF_CONTENT } from '../../consts'
-import { CarouselTypes } from './carousel'
+import { CarouselTypes, CarouselData } from './carousel'
 
-
+interface Carousel {
+  children: any
+}
 const Carousel = ({ carouselData, type }: CarouselTypes) => { 
 
   const [activeIndex, setActiveIndex] = useState(0)
@@ -19,7 +19,7 @@ const Carousel = ({ carouselData, type }: CarouselTypes) => {
     setActiveIndex(selectedIndex)
   }
 
-  const getBioItem = (item: object, index: number) => (
+  const getBioItem = (item: CarouselData, index: number) => (
       <RBCarousel.Item key={ `item-${index}`} > 
         <Container>
           <Row>
@@ -41,7 +41,7 @@ const Carousel = ({ carouselData, type }: CarouselTypes) => {
       </RBCarousel.Item>
   )
 
-  const getExperienceItem = (data, index) => (
+  const getExperienceItem = (data: CarouselData, index: number) => (
     <RBCarousel.Item key={ `item-${index}`} > 
         <Container className="contentContainer">
           <Row>
@@ -74,7 +74,7 @@ const Carousel = ({ carouselData, type }: CarouselTypes) => {
       </RBCarousel.Item>
   )
 
-  const getCarouselItems = (carouselData, type) => {
+  const getCarouselItems = (carouselData: CarouselData[], type: string) => {
     if (type === TYPE_OF_CONTENT.bio) {
       return carouselData.map((data, index) => getBioItem(data, index))  
     }

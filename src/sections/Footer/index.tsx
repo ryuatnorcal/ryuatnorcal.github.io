@@ -8,8 +8,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { LINKEDIN_LINK, EMAIL } from '../../consts'
-
-const Footer = ({ enable }) => { 
+interface FooterType {
+  enable: boolean
+}
+const Footer = ({ enable }: FooterType) => { 
   return enable ? (
     <section className="Footer">
       <Container fluid>

@@ -11,19 +11,23 @@ const renderIcons = () => {
   return ICONS.map((icon, index) => { 
     return (
       <Col className="icons" key={`${icon.tag}-${index}`}>
-        <i className={icon.tag} iid={icon.tag} target="tech" />
+        <i className={icon.tag} id={icon.tag} />
         <p>{ icon.name }</p>
       </Col>
     )
   })
 }
 
-const Tech = ({ enable }) => {
+interface TechType {
+  enable: boolean
+}
+
+const Tech = ({ enable }: TechType) => {
   return enable ? (
     <section className="Tech">
       <Container fluid>
         <Row className="justify-content-center">
-          <Col xs="auto header">
+          <Col xs="auto" className="header">
             <i className="icon-shell" aria-hidden="true"></i>
           	<h2>Favorite Technologies</h2>
           </Col>

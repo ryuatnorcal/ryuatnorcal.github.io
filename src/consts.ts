@@ -1,11 +1,64 @@
-export const LATEST_WORK = {
+interface LATEST_WORK_TYPE {
+  name: string,
+  title:  string,
+  company: string,
+  year: string
+}
+
+interface SET_OF_BIO_TYPE {
+  sec:string,
+  category: string,
+  header: string,
+  content: string,
+  location?: string,
+  year?: string,
+  role?: string
+}
+
+interface EXPERIENCES_TYPE {
+  sec: string,
+  theme?: string,
+  title?: string,
+  name?: string,
+  img?: string,
+  url?: MOBILE_EXPERIENCES_URL_TYPE,
+  desc: string,
+  year?: string,
+  tech?: Tech[]
+}
+
+interface MOBILE_EXPERIENCES_URL_TYPE {
+  ios: string,
+  android: string,
+  web: string
+}
+
+interface Tech {
+  name: string,
+  tag: string
+}
+
+interface TYPE_OF_CONTENT_TYPE {
+  experience: string,
+  bio: string
+}
+
+interface FEATURE_FLAGS_TYPE {
+  enableIntro: boolean,
+  enableBio: boolean,
+  enableTech: boolean,
+  enableFooter: boolean,
+  enableExperience: boolean
+}
+
+export const LATEST_WORK: LATEST_WORK_TYPE = {
   name: 'Ryutaro Matsuda',
   title:  'Sr Front End Developer',
   company: 'Telus Digital',
   year: '2021 - 2024'
 }
 
-export const SET_OF_BIO = [
+export const SET_OF_BIO: SET_OF_BIO_TYPE[] = [
   {
     sec:'bio',
     category: 'intro',
@@ -78,7 +131,7 @@ export const SET_OF_BIO = [
 
 ]
 
-export const MOBILE_EXPERIENCES = [
+export const MOBILE_EXPERIENCES: EXPERIENCES_TYPE[] = [
   {
     sec:'mobile',
     theme: "orange",
@@ -138,7 +191,7 @@ export const MOBILE_EXPERIENCES = [
   },
 ]
 
-export const ICONS = [
+export const ICONS: Tech[] = [
     {
       name:'React JS',
       tag: 'icon-reactjs'
@@ -185,7 +238,7 @@ export const ICONS = [
     }
 ]
 
-export const WEB_EXPERIENCE = [
+export const WEB_EXPERIENCE: EXPERIENCES_TYPE[]= [
   {
     sec: 'web',
     title: 'Telus TV catalog for eCommerce page',
@@ -396,15 +449,15 @@ export const WEB_EXPERIENCE = [
   }
 ]
 
-export const TYPE_OF_CONTENT = {
+export const TYPE_OF_CONTENT: TYPE_OF_CONTENT_TYPE = {
   experience: 'experience',
   bio: 'bio'
 }
 
-export const LINKEDIN_LINK = "https://www.linkedin.com/in/rmatsuda/"
-export const EMAIL = "rmatsuda686ca@gmail.com"
+export const LINKEDIN_LINK: string = "https://www.linkedin.com/in/rmatsuda/"
+export const EMAIL: string = "rmatsuda686ca@gmail.com"
 
-export const FEATURE_FLAGS = {
+export const FEATURE_FLAGS: FEATURE_FLAGS_TYPE= {
   enableIntro: true,
   enableBio: true,
   enableTech: true,

@@ -1,9 +1,9 @@
 
-import Bio from '../../sections/Bio';
-import Intro from '../../sections/Intro'
-import Tech from '../../sections/Tech'
-import Experience from '../../sections/Experience';
-import Footer from '../../sections/Footer'
+import Bio from '@/app/sections/Bio';
+import Intro from '@/app/sections/Intro'
+import Tech from '@/app/sections/Tech'
+import Experience from '@/app/sections/Experience';
+import Footer from '@/app/sections/Footer'
 import { FEATURE_FLAGS } from '../../consts'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
